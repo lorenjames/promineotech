@@ -26,7 +26,7 @@ public class Application {
 		firstName = "Tommy";
 		String lastName = "Smith";
 		String fullName = firstName + " " + lastName;
-		System.out.println(fullName);
+		System.out.println("My Name is: " + fullName);
 		System.out.println(isAge30);
 		System.out.println(age == 68);
 		
