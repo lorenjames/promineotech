@@ -29,6 +29,7 @@ public class Application {
 		System.out.println("My Name is: " + fullName);
 		System.out.println("Is Your age 30?" + isAge30);
 		System.out.println(age == 68);
+		System.out.println("test");
 		
 		int x = 4;
 		int y = 6;
