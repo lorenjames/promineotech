@@ -23,25 +23,64 @@ public class week03 {
 
 		
 		// 2. Print out the first element in the array
+			
+			System.out.println(numArray[0]);
 	
 		
 		// 3. Print out the last element in the array without using the number 5
+			
+			System.out.println(numArray[numArray.length -1]);
 		
 		
 		// 4. Print out the element in the array at position 6, what happens?
+			
+			//System.out.println(numArray[6]);
+			
+			
+			//Throws Error:
+			//Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6 
+			//at Labs/week03.week03.main(week03.java:37)
 
 		
 		// 5. Print out the element in the array at position -1, what happens?
+			
+			//System.out.println(numArray[-1]);
+			
+			//Throws Error:
+			//Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 6
+			//at Labs/week03.week03.main(week03.java:47)
 
 			
 		// 6. Write a traditional for loop that prints out each element in the array
+			
+			for (int i = 0; i <= numArray.length-1; i++) {
+				System.out.println(numArray[i]);
+			}
 	
 			
 		// 7. Write an enhanced for loop that prints out each element in the array
+			
+			for (int number : numArray) {
+				System.out.println(number);
+			}
 
 		
 		// 8. Create a new variable called sum, write a loop that adds 
 		//			each element in the array to the sum
+			
+			int sum = 0;
+			
+			for (int total : numArray) {
+				
+				//int prevNum = sum;
+				
+				sum += total;
+				
+				//System.out.println(total + " + " + prevNum + " = " + sum);
+				
+			}
+			
+			System.out.println(sum);
 
 			
 		// 9. Create a new variable called average and assign the average value of the array to it
